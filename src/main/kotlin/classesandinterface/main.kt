@@ -44,4 +44,30 @@ fun main() {
     println(pl1.equals(pl2))
     println(pl1)
 
+    //w kotlinie klasy defaultowa sa final a gdy chcemy inaczej, trzeba uzyc open
+    open class A constructor(a: Int, b:String?) {
+        public fun f() {
+
+        }
+    }
+
+    class B(a: Int, b:String?, c:String) : A(a, b)
+
+    //modyfikatory dostepu
+    open class C {
+        val name = "test"
+        private val number = 1
+        internal val x = 'a' //skladowa x jest dostepna w obszarze tego samego modulu (modul to jest zbior skompilowanych zrodel)
+
+        protected open fun f() { //zeby f mogla zostac nadpisana to musi byc open
+
+        }
+    }
+
+    class D : C() {
+        override fun f() {
+
+        }
+    }
+
 }
