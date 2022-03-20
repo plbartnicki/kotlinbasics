@@ -51,6 +51,11 @@ fun maxNumDivBy5(values: Array<Int>): Int? {
     return candiate
 }
 
+//a < b
+fun concat(nums : List<String>, a: Int, b : Int) : String {
+    return nums.filter{ el -> el.length >= a && el.length <= b}.reduce{a, b-> b + a}
+}
+
 fun main(args: Array<String>) {
 
     //funkcje można zagnieżdżać
@@ -123,4 +128,6 @@ fun main(args: Array<String>) {
     }
 
     println(sumValuesLess0(mutableList))
+
+    println(concat(listOf("ala", "mars", "topologia"), 2, 4))
 }
