@@ -9,6 +9,7 @@ fun main() {
     val p2 = Point3D(-0.1, 2.3, 5.0)
 
     //uzyj equals
+    println(p1.equals(p2))
 
     println(p1.x)
 
