@@ -1,4 +1,4 @@
-package classesandinterface
+package entities
 
 class Customer constructor(val firstName: String,
                            val phoneNumber: String? = null,

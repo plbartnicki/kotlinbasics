@@ -1,5 +1,6 @@
 package entities
 
+//primary constructor
 class Point3D constructor(val x:Double, val y:Double, val z:Double) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
