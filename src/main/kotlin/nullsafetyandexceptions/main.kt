@@ -43,7 +43,7 @@ fun main() {
     println(emp1)
 
     try {
-        println(h(-9.0))
+        println(SimpleFormulas.h(-9.0))
     } catch (ex: NullPointerException) {
         //akcja 1
         println(ex)
@@ -58,12 +58,7 @@ fun main() {
     println("app is running")
 }
 
-fun h(x: Double?): Double {
-    if(x!! <= 0.0) {
-        throw NotPositiveValueException()
-    }
-    return Math.log(x!!) * Math.E + Math.PI
-}
+
 
 fun notCompleted(): Nothing {
     throw Exception("no completed implementation")
